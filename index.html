@@ -35,7 +35,18 @@
 <script type="text/javascript">
 var playerInstance = jwplayer("myElement");
 playerInstance.setup({
-    file: "https://dl.dropboxusercontent.com/s/lx2y1sfq5my9nst/Naruto%20-%20The%20Last.mp4",
+    image: "https://dl.dropboxusercontent.com/s/cad7rr8afk1gimo/naruto-thelast.jpg",
+	sources: [{
+        file: "https://dl.dropboxusercontent.com/s/lx2y1sfq5my9nst/Naruto%20-%20The%20Last.mp4",
+        label: "720p HD"
+      },{
+        file: "https://dl.dropboxusercontent.com/s/lx2y1sfq5my9nst/Naruto%20-%20The%20Last.mp4",
+        label: "360p SD",
+        "default": "true"
+      },{
+        file: "https://dl.dropboxusercontent.com/s/lx2y1sfq5my9nst/Naruto%20-%20The%20Last.mp4",
+        label: "1080p WebHD"
+      }]
     width: "100%",
 	aspectratio: "16:9",
 	tracks: [{ 
